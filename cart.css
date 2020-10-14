@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 60%;
+    padding: 10px;
+    border: solid 1px #e8e8e8;
+  }
+
+  .column2 {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    border: solid 1px #e8e8e8;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+nav {
+position: absolute;
+top:0;
+right:0;
+left:0;
+z-index: 2;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 12px;
+}
+
+nav li {
+list-style: none;
+display: inline-block;
+padding: 0 10px 0 10px;
+}
+
+nav li span{
+    padding-left: 5px;
+}
+
+li a{
+    padding: 5px;
+    background-color: #fff;
+    text-decoration: none;
+
+}
+
+#cart-clear a {
+    background-color: royalblue;
+    color:#fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* cart page */
+.container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	padding-bottom: 100px;
+}
+.image {
+	width: 100%;
+	margin-right: 20px;
+	margin-left: 20px;
+	position: relative;
+	border: solid 1px darkgrey;
+}
+.add-cart {
+	text-align: center;
+	padding: 0px;
+}
+.header-h2 {
+	color: black;
+}
+.width-80 {
+	width: 60%;
+	display: flex;
+}
+.width-40 {
+	width: 40%;
+}
+.btn-success {
+	padding: 8px;
+	color: #fff !important;
+	background-color: #4CAF50 !important;
+	border: none;
+	border-radius: 2px;
+}
+.add-cart-btn {
+	border: solid 2px #03A9F4;
+	border-radius: 4px;
+	float: right;
+	padding: 4px;
+}
+.products-container {
+	max-width: 650px;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.product-header {
+	width: 100%;
+	max-width: 650px;
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 auto;
+	border-bottom: 1px solid lightgray;
+	text-align: center;
+}
+.product-title {
+	width: 45%;
+}
+.price {
+	width: 15%;
+	display: flex;
+	align-items: center;
+}
+.quantity {
+	width: 30%;
+	display: flex;
+	align-items: center;
+}
+.total {
+	width: 10%;
+	display: flex;
+	align-items: center;
+}
+.product {
+	width: 45%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0;
+}
+.products {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.square {
+	height: 35px;
+	width: 30px;
+	margin-top: -50px;
+	background-color: #5fca63;
+	color: white;
+	position: relative;
+	top: 65px;
+	left: 16px;
+}
+.spanQty {
+	border: 1px solid #dad0d0;
+	padding: 7px;
+	box-shadow: 1px 2px lightgrey;
+	margin: 3px;
+}
+.basketTotalContainer {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	padding: 10px 0;
+	border-top: 1px solid #dad0d0;
+}
+.basketTotalTitle {
+	width: 30%;
+}
+.main {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+h1 {
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+}
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+.btn {
+	color: #ffffff;
+	padding: 0.8rem;
+	font-size: 14px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	font-weight: 400;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: transparent;
+	
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.cards_item {
+	display: flex;
+	padding: 1rem;
+	border: solid 1px #d8d8d8;
+	border-radius: 4px;
+}
+.card {
+	background-color: white;
+	border-radius: 0.25rem;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.card_content {
+	margin-top: 12px;
+	padding: 1rem;
+	background: linear-gradient(to bottom left, #e8e8e8 40%, #ded2cb 100%);
+}
+.card_title {
+	color: #ffffff;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	margin: 0px;
+}
+.card_text {
+	color: #ffffff;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	margin-bottom: 1.25rem;
+	font-weight: 400;
+}
+.made_by {
+	font-weight: 400;
+	font-size: 13px;
+	margin-top: 35px;
+	text-align: center;
+}
+@media (min-width: 40rem) {
+	.cards_item {
+		width: 50%;
+	}
+}
+@media (min-width: 56rem) {
+	.cards_item {
+		width: 33.3333%;
+	}
+}
