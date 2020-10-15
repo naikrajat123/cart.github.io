@@ -1,7 +1,7 @@
 let carts = document.querySelectorAll('.add-cart');
 // let removeClicked = document.querySelectorAll('.add-cart');
 
-// document.getElementById("cart-clear").addEventListener("click", clearCart);
+document.getElementById("cart-clear").addEventListener("click", clearCart);
 // //document.getElementById("remove").addEventListener("click", isRemoveClicked);
 
 
